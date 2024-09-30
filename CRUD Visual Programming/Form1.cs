@@ -34,6 +34,10 @@ namespace CRUD_Visual_Programming
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            FrmMain frm = new FrmMain();
+            frm.Show();
+            this.Hide();
+
             try
             {
                 query = string.Format("select * from tbl_pengguna where username = '{0}'", txtUsername.Text);
@@ -71,9 +75,10 @@ namespace CRUD_Visual_Programming
             {
                 MessageBox.Show(ex.ToString());
             }
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) 
         {
 
         }
