@@ -387,6 +387,17 @@ namespace CRUD_Visual_Programming
             }
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmPengguna frmPengguna = new FrmPengguna();
+            frmPengguna.Show();
+        }
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
             try
